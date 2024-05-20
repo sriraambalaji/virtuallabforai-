@@ -1,0 +1,222 @@
+.list-of-experiments,
+.target-audience {
+  position: absolute;
+  top: 284px;
+  left: 109px;
+  letter-spacing: 0.05em;
+  font-weight: 600;
+  display: inline-block;
+  width: 568px;
+  height: 40px;
+}
+.target-audience {
+  top: 405px;
+  width: 427px;
+  height: 81px;
+}
+.ug1 {
+  margin-bottom: 0;
+}
+.ug {
+  margin: 0;
+  font-family: inherit;
+  font-size: inherit;
+  padding-left: var(--padding-14xl);
+}
+.b-tech-be {
+  margin-block-start: 0;
+  margin-block-end: 18px;
+}
+.pg1 {
+  margin-bottom: 0;
+}
+.pg {
+  font-family: inherit;
+  font-size: inherit;
+  padding-left: var(--padding-14xl);
+}
+.pg,
+.ph-d-beginners {
+  margin: 0;
+}
+.ug-b-tech-container {
+  position: absolute;
+  top: 462px;
+  left: 255px;
+  font-size: var(--font-size-6xl);
+  letter-spacing: 0.05em;
+  font-weight: 600;
+  display: inline-block;
+  width: 725px;
+  height: 205px;
+}
+.group-child2,
+.group-child3 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 1440px;
+  height: 3px;
+  object-fit: contain;
+}
+.group-child3 {
+  top: 3px;
+}
+.chengalpattu1,
+.srm-institute-and1 {
+  margin: 0;
+}
+.srm-institute-and-container1 {
+  position: absolute;
+  top: 23px;
+  left: 1013px;
+  letter-spacing: 0.05em;
+  text-transform: capitalize;
+  font-weight: 600;
+  display: inline-block;
+  width: 468px;
+  height: 85px;
+}
+.contact-details1 {
+  margin-block-start: 0;
+  margin-block-end: 18px;
+}
+.link-httpswwwsrmistedui5 {
+  text-decoration: underline;
+}
+.link-httpswwwsrmistedui4 {
+  color: inherit;
+}
+.emailinfodesksrmisteduin1,
+.link-httpswwwsrmistedui3 {
+  margin-block-start: 0;
+  margin-block-end: 18px;
+}
+.contact-details-link-container1 {
+  position: absolute;
+  top: 10px;
+  left: 24px;
+  letter-spacing: 0.05em;
+  font-weight: 600;
+  text-align: left;
+  display: inline-block;
+  width: 554px;
+  height: 111px;
+}
+.line-group {
+  position: absolute;
+  top: 906px;
+  left: 0;
+  width: 1481px;
+  height: 121px;
+  text-align: center;
+  font-size: var(--font-size-lgi);
+}
+.csc305j1 {
+  font-size: var(--font-size-xl);
+}
+.artificial-intelligence-18csc3 {
+  font-weight: 900;
+}
+.artificial-intelligence-18csc2,
+.blank-line3 {
+  margin-block-start: 0;
+  margin-block-end: 18px;
+}
+.p1 {
+  margin: 0;
+}
+.artificial-intelligence-18csc-container1 {
+  position: absolute;
+  bottom: 0;
+  left: calc(50% - 650px);
+  letter-spacing: 0.05em;
+  display: inline-block;
+  width: 646px;
+  height: 41px;
+}
+.group-child4,
+.group-child5 {
+  position: absolute;
+  top: 106px;
+  left: 0;
+  width: 1440px;
+  height: 4px;
+  object-fit: contain;
+}
+.group-child5 {
+  top: 110px;
+}
+.group-child6 {
+  position: absolute;
+  top: 0;
+  left: 448px;
+  border-radius: var(--br-lg);
+  background-color: var(--color-goldenrod);
+  width: 535px;
+  height: 75px;
+}
+.virtual-lab1 {
+  position: absolute;
+  top: calc(50% - 83px);
+  left: calc(50% - 240px);
+  font-size: var(--font-size-21xl);
+  letter-spacing: 0.37em;
+  display: inline-block;
+  color: var(--color-black);
+  white-space: pre-wrap;
+  width: 491px;
+  height: 63px;
+}
+.artificial-intelligence-18csc-group {
+  position: absolute;
+  bottom: 796px;
+  left: calc(50% - 720px);
+  width: 1440px;
+  height: 190px;
+  font-size: var(--font-size-11xl);
+  color: var(--color-orange);
+}
+.vacuum-cleaner-problem1,
+.vacuum-cleaner-problem2 {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+}
+.vacuum-cleaner-problem2 {
+  letter-spacing: 0.05em;
+  font-weight: 600;
+  display: inline-block;
+  
+}
+.vacuum-cleaner-problem1 {
+  right: 0;
+  bottom: 0;
+}
+.exp-1,
+.vacuum-cleaner-problem {
+  position: absolute;
+  top: 2px;
+  left: 30px;
+  width: 354px;
+  height: 32px;
+}
+.exp-1 {
+  top: 336px;
+  left: 244px;
+  font-size: var(--font-size-6xl);
+}
+.desktop-1 {
+  width: 100%;
+  position: relative;
+  background-color: var(--color-darkslategray);
+  height: 1024px;
+  overflow: hidden;
+  mix-blend-mode: normal;
+  text-align: left;
+  font-size: var(--font-size-8xl);
+  color: var(--color-white);
+  font-family: var(--font-inter);
+}

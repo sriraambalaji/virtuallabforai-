@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vacuum Cleaner Simulation - Virtual Lab</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .container {
+            display: flex;
+            max-width: 800px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+        }
+
+        .left-container {
+            flex: 1;
+            background-color: #183451;
+            color: #fff;
+            padding: 20px;
+        }
+
+        .right-container {
+            flex: 2;
+            padding: 20px;
+        }
+
+        h1 {
+            text-align: center;
+            color: #183451;
+            margin-bottom: 20px;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        label, select, input[type="number"], input[type="submit"] {
+            margin-bottom: 10px;
+            color: #183451;
+        }
+
+        input[type="submit"] {
+            background-color: #183451;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #0d1a29;
+        }
+
+        #output {
+            color: #183451;
+        }
+
+        .left-container h3 {
+            color: #fff;
+            margin-bottom: 50px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="left-container">
+            <a href="desktop-2.html"><h3>AIM</h3></a>
+            <a href="desktop-3.html"><h3>Algorithm</h3></a>
+            <a href="desktop-4.html"><h3>PROCEDURE</h3></a>
+            <a href="desktop-5.html"><h3>SIMULATION</h3></a>
+            <a href="desktop-6.html"><h3>RESULT</h3></a>
+            
+        </div>
+        <div class="right-container">
+            <h1>Vacuum Cleaner Simulation - Virtual Lab</h1>
+            <form id="vacuumForm">
+                <label for="numRooms">Number of Rooms:</label>
+                <input type="number" id="numRooms" name="numRooms" min="1" required>
+
+                <label for="location">Location of Vacuum Cleaner:</label>
+                <select id="location" name="location" required></select>
+
+                <div id="statusInputs"></div>
+
+                <input type="submit" value="Simulate">
+            </form>
+
+            <div id="output"></div>
+        </div>
+    </div>
+
+    <script src="vacuum_cleaner.js"></script>
+    <script>
+        document.getElementById("vacuumForm").addEventListener("submit", function(event) {
+            event.preventDefault(); // Prevent the default form submission
+            const numRooms = parseInt(document.getElementById("numRooms").value);
+            const location = parseInt(document.getElementById("location").value);
+            const statusInputs = [];
+            for (let i = 0; i < numRooms; i++) {
+                statusInputs.push(parseInt(document.getElementById("status" + i).value));
+            }
+            vacuumWorld(location, statusInputs); // Call the vacuumWorld function
+        });
+
+        document.getElementById("numRooms").addEventListener("input", function() {
+            const numRooms = parseInt(document.getElementById("numRooms").value);
+            const locationSelect = document.getElementById("location");
+            const statusInputsDiv = document.getElementById("statusInputs");
+
+            // Clear previous inputs
+            locationSelect.innerHTML = "";
+            statusInputsDiv.innerHTML = "";
+
+            // Generate location options
+            for (let i = 0; i < numRooms; i++) {
+                const option = document.createElement("option");
+                option.value = i;
+                option.textContent = "Room " + (i + 1);
+                locationSelect.appendChild(option);
+            }
+
+            // Generate status input fields
+            for (let i = 0; i < numRooms; i++) {
+                const label = document.createElement("label");
+                label.textContent = "Status of Room " + (i + 1) + " (0 for clean, 1 for dirty):";
+                const input = document.createElement("input");
+                input.type = "number";
+                input.id = "status" + i;
+                input.name = "status" + i;
+                input.min = "0";
+                input.max = "1";
+                input.required = true;
+                statusInputsDiv.appendChild(label);
+                statusInputsDiv.appendChild(input);
+                statusInputsDiv.appendChild(document.createElement("br"));
+            }
+        });
+    </script>
+</body>
+</html>
